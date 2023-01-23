@@ -22,7 +22,6 @@ function getPass() {
 }
 
 function savePass() {
-    document.title = password.value
     savebutton.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(`Password: ${document.title}`))
     savebutton.setAttribute('Download', 'AirasPasswordGenerator.txt')
 }
